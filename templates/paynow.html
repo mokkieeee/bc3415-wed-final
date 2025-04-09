@@ -79,6 +79,10 @@
             async function transfer() {
                 const accounts = await web3.eth.requestAccounts();
                 console.log(accounts[0]);
+                const payer = docuoment.getElementById("payer").value;
+                const payee = docuoment.getElementById("payee").value;
+                const amount = docuoment.getElementById("amount").value;
+                console.log(payer,payee,amount)
 
             }
             async function transaction() {
